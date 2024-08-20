@@ -16,5 +16,6 @@ class DataVisPanel(bpy.types.Panel):
         propData = scene.dataVis_nodes
 
         # choose subtitle/lyric file
-        layout.label(text="Load data")
         layout.prop(propData,"data_filepath",text="Data File",placeholder="select the data file")
+        if propData.data_filepath:
+            layout.operator('data_vis.data_select',text="Data Select",icon='FILE_VOLUME')

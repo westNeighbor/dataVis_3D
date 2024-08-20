@@ -7,6 +7,7 @@ class DataVisNodesPropertyGroup(bpy.types.PropertyGroup):
     data_filepath: bpy.props.StringProperty(
         description="Path to data file",
         subtype = 'FILE_PATH',
-        default="",
+        default="/Users/mhzhao/blenders/dev_addons/dataVis_3D/test.csv",
         maxlen=4096
     )
+

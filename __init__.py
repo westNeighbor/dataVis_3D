@@ -162,6 +162,7 @@ def register():
     # operators
     #bpy.utils.register_class(CreateNewSubtitle)
     #bpy.utils.register_class(UpdateSubtitle)
+    operations.register()
 
     # ui
     bpy.utils.register_class(DataVisPanel)
@@ -180,6 +181,7 @@ def unregister():
     # operators
     #bpy.utils.unregister_class(CreateNewSubtitle)
     #bpy.utils.unregister_class(UpdateSubtitle)
+    operations.unregister()
 
     # properties
     bpy.utils.unregister_class(DataVisNodesPropertyGroup)

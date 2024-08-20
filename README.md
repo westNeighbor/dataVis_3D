@@ -2,4 +2,5 @@
 Features:
 - visualize data in 3D
 - animate data in control
-- custom effects easily
+- customize effects easily
+- bar chart race 
